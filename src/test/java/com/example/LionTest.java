@@ -22,7 +22,7 @@ public class LionTest {
     assertEquals("Ожидали число 1",expectedResult,actualResult);
     }
     @Test
-    public void doesHaveManeShowsListOfPredatorFoods() throws Exception {
+    public void getFoodShowsListOfPredatorFoods() throws Exception {
     Lion lion=new Lion("Самец",feline);
     List<String> expectedResult=List.of("Животные", "Птицы", "Рыба");
     Mockito.when(feline.getFood("Хищник")).thenReturn(expectedResult);
