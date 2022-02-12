@@ -3,6 +3,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
+
 @RunWith(Parameterized.class)
 public class LionParameterizedTest {
     private final String sex;
@@ -19,7 +20,7 @@ public class LionParameterizedTest {
         };
     }
     @Test
-    public void doesHaveManeWithPozitivePartametsReturnTrueAndFalse() throws Exception {
+    public void doesHaveManeWithPositiveParametersReturnTrueAndFalse() throws Exception {
         Feline feline = new Feline();
         Lion lion = new Lion(sex, feline);
         boolean expected = lion.doesHaveMane();

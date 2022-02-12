@@ -6,12 +6,11 @@ import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.Test;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
+
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
-
     @Mock
     Feline feline;
-
     @Test
     public void getSoundShowsMeow(){
         Cat  cat = new Cat(feline);

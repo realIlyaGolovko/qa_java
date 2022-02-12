@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
     @Mock Feline feline;
-
     @Test
     public void getKittensWithOneCountShowsOne() throws Exception {
     Lion lion=new Lion("Самец",feline);
