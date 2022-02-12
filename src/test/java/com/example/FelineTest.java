@@ -25,7 +25,7 @@ public class FelineTest {
     @Test
     public void getKittensWithTwoCountShowsTwo(){
     int expectedResult=2;
-    int actualResult=feline.getKittens();
+    int actualResult=feline.getKittens(2);
     assertEquals("Ожидали число 2",expectedResult,actualResult);
     }
     @Test
